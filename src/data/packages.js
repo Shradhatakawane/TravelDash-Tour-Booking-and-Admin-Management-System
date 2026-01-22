@@ -31,8 +31,7 @@ const defaultPackages = [
     location: "Manali, Himachal Pradesh",
     days: "5D / 4N",
     price: 32000,
-    image:
-      "https://images.unsplash.com/photo-1612886646117-1d57c2d1d3a0?w=1200",
+    image:"https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1200",
 
     bestTime: "Dec - Feb",
     bestFor: ["Adventure", "Couples", "Friends"],
