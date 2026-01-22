@@ -1,0 +1,142 @@
+.mmt-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.mmt-card {
+   min-width: 0;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: 0.25s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mmt-card:hover {
+  transform: translateY(-6px);
+}
+
+.mmt-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.mmt-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.mmt-card:hover .mmt-img {
+  transform: scale(1.05);
+}
+
+/* Duration Badge */
+.mmt-duration {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 13px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Content */
+.mmt-content {
+  padding: 14px 14px 16px;
+}
+
+.mmt-title {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+
+/* Includes */
+.mmt-includes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.mmt-small-title {
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0;
+  color: var(--text);
+}
+
+.mmt-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+/* Bottom */
+.mmt-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.mmt-price-label {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.mmt-price {
+  margin: 4px 0 0;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--text);
+}
+
+/* Button */
+.mmt-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: 0.2s ease;
+}
+
+.mmt-btn:hover {
+  opacity: 0.92;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .mmt-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .mmt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .mmt-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

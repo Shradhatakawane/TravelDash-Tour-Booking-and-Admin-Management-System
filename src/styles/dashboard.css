@@ -1,0 +1,163 @@
+/* =========================
+   DASHBOARD (PROFESSIONAL)
+========================= */
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.dash-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.dash-subtitle {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.dash-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.dash-stat-card {
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  border-radius: 18px;
+}
+
+.dash-stat-card p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.dash-stat-card h2 {
+  margin: 6px 0 0;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.dash-filterbar {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.dash-filterbar .input {
+  margin-top: 0;
+  max-width: 380px;
+}
+
+.dash-table {
+  margin-top: 16px;
+  overflow-x: auto;
+  background: white;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.dash-empty {
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.dash-cell-title {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.dash-cell-sub {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.dash-action-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Modal */
+.dash-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  z-index: 9999;
+}
+
+.dash-modal {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.dash-modal-grid p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+.table-box {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 900px; /* IMPORTANT */
+  border-collapse: collapse;
+}
+
+th, td {
+  white-space: nowrap; /* IMPORTANT */
+}
+
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .dash-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .dash-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dash-filterbar .input {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,5 @@
+/* BOOKINGS PAGE */
+.mybookings-grid {
+  display: grid;
+  gap: 14px;
+}
