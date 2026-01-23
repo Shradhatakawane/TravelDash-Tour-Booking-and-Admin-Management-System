@@ -1,6 +1,3 @@
-/* =========================
-   ADMIN PACKAGES (Responsive)
-========================= */
 
 .admin-head {
   display: flex;
@@ -113,7 +110,7 @@
 }
 
 /* =========================
-   ADD PACKAGE FORM (UI ONLY)
+   ADD PACKAGE FORM 
 ========================= */
 
 .admin-form-wrap {
@@ -154,7 +151,7 @@
 }
 
 /* =========================
-   EDIT MODAL (UI ONLY)
+   EDIT MODAL 
 ========================= */
 
 .admin-edit-modal {
@@ -185,9 +182,6 @@
   min-width: 140px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 1000px) {
   .admin-grid {

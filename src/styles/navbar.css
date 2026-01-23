@@ -1,6 +1,4 @@
-/* =========================
-   NAVBAR (RESPONSIVE + NO OVERFLOW)
-========================= */
+
 
 .nav-wrap {
   position: sticky;
@@ -73,7 +71,7 @@
 }
 
 /* =========================
-   LOGOUT TAB BUTTON (NO BOX)
+   LOGOUT TAB BUTTON 
 ========================= */
 .nav-link-btn {
   border: none;
@@ -104,7 +102,7 @@
 }
 
 /* =========================
-   RIGHT ACTION BUTTON (DESKTOP)
+   RIGHT ACTION BUTTON 
 ========================= */
 .nav-actions {
   flex: 0 0 auto;

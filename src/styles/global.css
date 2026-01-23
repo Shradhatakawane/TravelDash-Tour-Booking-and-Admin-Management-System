@@ -1,5 +1,4 @@
 
-/* 1) Base Reset + Overflow Fix */
 html,
 body {
   width: 100%;
@@ -42,7 +41,6 @@ iframe {
   --shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* 4) Body + Typography */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: var(--light);
@@ -53,18 +51,9 @@ a {
   text-decoration: none;
 }
 
-/* Fix long text overflow (bookingId, emails, etc.) */
-p,
-span,
-a,
-td,
-th,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p,span,a,td,th,
+h1,h2,h3,h4,h5,h6 
+{
   word-break: break-word;
   overflow-wrap: anywhere;
 }
@@ -143,7 +132,6 @@ h6 {
   color: white;
 }
 
-/* Small button (optional) */
 .btn-small {
   padding: 9px 14px;
   border-radius: 14px;
